@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.24"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkListStore" id="lsAllMun">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name Municipalité -->
+      <column type="gchararray"/>
+      <!-- column-name CodeGeo -->
+      <column type="gchararray"/>
+      <!-- column-name Actif -->
+      <column type="gboolean"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsCat">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name Categorie -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsCreateEventLieu">
+    <columns>
+      <!-- column-name Municipalité -->
+      <column type="gchararray"/>
+      <!-- column-name MRC -->
+      <column type="gchararray"/>
+      <!-- column-name Région -->
+      <column type="gchararray"/>
+      <!-- column-name Type -->
+      <column type="gchararray"/>
+      <!-- column-name Adresse -->
+      <column type="gchararray"/>
+      <!-- column-name ID -->
+      <column type="gint"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsCreateRapIntervenant">
+    <columns>
+      <!-- column-name Municipalité -->
+      <column type="gchararray"/>
+      <!-- column-name mrc -->
+      <column type="gchararray"/>
+      <!-- column-name Partenaire -->
+      <column type="gchararray"/>
+      <!-- column-name Mesure -->
+      <column type="gchararray"/>
+      <!-- column-name id -->
+      <column type="guint64"/>
+      <!-- column-name id_rap -->
+      <column type="gint64"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsImg">
+    <columns>
+      <!-- column-name Id -->
+      <column type="gint64"/>
+      <!-- column-name Id_Rap -->
+      <column type="gint64"/>
+      <!-- column-name Chemin -->
+      <column type="gchararray"/>
+      <!-- column-name Source -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsMRC">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name MRC -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsMun">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name Municipalité -->
+      <column type="gchararray"/>
+      <!-- column-name CodeGeo -->
+      <column type="gchararray"/>
+      <!-- column-name Actif -->
+      <column type="gboolean"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsPartenaire">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name Partenaire -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsRegion">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name Nom -->
+      <column type="gchararray"/>
+      <!-- column-name code -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsSearchResultEvent">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gint64"/>
+      <!-- column-name DateTime -->
+      <column type="gchararray"/>
+      <!-- column-name Titre -->
+      <column type="gchararray"/>
+      <!-- column-name Categorie -->
+      <column type="gchararray"/>
+      <!-- column-name Lieu -->
+      <column type="gchararray"/>
+      <!-- column-name Description -->
+      <column type="gchararray"/>
+      <!-- column-name NoEvent -->
+      <column type="gint64"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsSearchResultRap">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gint64"/>
+      <!-- column-name Date -->
+      <column type="gchararray"/>
+      <!-- column-name Titre -->
+      <column type="gchararray"/>
+      <!-- column-name Intervenant -->
+      <column type="gchararray"/>
+      <!-- column-name Bilan -->
+      <column type="gchararray"/>
+      <!-- column-name noRap -->
+      <column type="gint"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsTypeRue">
+    <columns>
+      <!-- column-name ID -->
+      <column type="gchararray"/>
+      <!-- column-name TypeRue -->
+      <column type="gchararray"/>
+    </columns>
+  </object>
+  <object class="GtkListStore" id="lsUser">
+    <columns>
+      <!-- column-name Id -->
+      <column type="gint64"/>
+      <!-- column-name Nom -->
+      <column type="gchararray"/>
+      <!-- column-name Privilege -->
+      <column type="gint64"/>
+    </columns>
+  </object>
+</interface>
